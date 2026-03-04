@@ -19,10 +19,13 @@ public class Main {
         Scanner stuff1 = new Scanner(stuff1Ref);
 
 
+        System.out.println("\n\n---------- Writing contents of stuff 2 from stuff1... ----------\n\n");
         while (stuff1.hasNext()){
             String line = stuff1.nextLine();
             stuff2Writter.println( line );
         }
+
+        System.out.println("Done!\n");
 
         stuff2Writter.close();
 
