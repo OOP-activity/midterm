@@ -10,7 +10,7 @@ public class Main {
         File stuff1Ref = new File("files/stuff1.txt");
         File stuff2Ref = new File("files/stuff2.txt");
 
-        if (!stuff1Ref.exists()) {
+        if (!stuff1Ref.exists() || !stuff2Ref.exists()) {
             System.out.println("stuff.txt file must exist!");
             System.exit(0);
         }
