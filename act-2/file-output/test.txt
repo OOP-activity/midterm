@@ -1,7 +1,10 @@
-hasdjah khsd kajshdk ajhdkls hfkajshf lahslfd lahfkj alkjsk ljhwfdkl haskfh lawjh f
-sakd f
-s dfals fh
+#!/bin/bash
+echo "Compiling src/Main.java into out/..."
+javac -d out src/Main.java
 
- sadfjh lashfd sadfh 
-
-   ksdh sdjfg jsldkfjg l
+if [ $? -eq 0 ]; then
+    echo "Running com.example.Main from out/..."
+    java -cp out src.Main
+else
+    echo "Compilation failed."
+fi

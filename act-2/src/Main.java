@@ -19,6 +19,6 @@ public class Main {
         System.out.println("What is its absolute path? " + file.getAbsolutePath());
         System.out.println("What is its name? " + file.getParent());
         System.out.println("When was it last modified? " + new Date(file.lastModified()));
-        System.out.println("What is its length? " + file.length());
+        System.out.println("What is its length? " + file.length() + " bytes");
     }
 }
